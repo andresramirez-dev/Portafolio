@@ -1,0 +1,86 @@
+:root{
+    --color-princpal: rgb(14, 74, 14);
+    --color-fondo: white;
+    --color-texto: black;
+    --radio:12px;
+    --color-tarjeta: greenyellow;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0px;
+    padding: 0px;
+}
+
+.encabezado{
+    background-color: var(--color-princpal);
+    color: var(--color-fondo);
+    text-align: center;
+    padding: 40px 16px;
+}
+
+.encabezado h1{
+    font-size: 2rem;
+}
+
+.subtitulo{
+    opacity: 0.8;
+    margin-bottom: 16px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+nav a{
+   color: var(--color-fondo);
+   text-decoration: none;
+   padding: 6px 12px;
+   background-color: rgb(55, 53, 53);
+   border-radius: var(--radio);
+   cursor: pointer;
+}
+
+nav a:hover{
+    background-color: greenyellow;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+
+.tarjeta{
+    background-color: var(--color-tarjeta);
+    border-radius: var(--radio);
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(12, 12, 12, 0.6);
+}
+
+.tarjeta h2{
+    color: var(--color-princpal);
+    margin-bottom: 8px;
+}
+
+.boton{
+    background-color: var(--color-princpal);
+    color: var(--color-fondo);
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--radio);
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgb(55, 53, 53);
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+
+.pie{
+    background-color: var(--color-princpal);
+    color: var(--color-fondo);
+    text-align: center;
+    padding: 16px;
+}
